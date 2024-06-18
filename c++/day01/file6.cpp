@@ -1,6 +1,8 @@
 #include<iostream>
 using namespace std;
 
+//---------pointers----------------
+
 /*
 void update(int *ptr)
 {
@@ -18,6 +20,8 @@ int main()
 	return 0;
 }
 */
+
+//----------references------------------
 
 void update(int &y)
 {
