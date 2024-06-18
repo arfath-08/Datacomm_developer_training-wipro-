@@ -36,5 +36,10 @@ int main()
 	
 	std :: cout << "main x =" << x;
 	
+	x = 8;
+	update(x);
+	
+	std :: cout << "main x =" << x;
+	
 	return 0;
 }
