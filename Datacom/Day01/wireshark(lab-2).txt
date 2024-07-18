@@ -1,0 +1,88 @@
+1. Is your browser running HTTP version 1.0 or 1.1? What version of HTTP is the server
+running?
+Ans:http 1.1
+
+2. What languages (if any) does your browser indicate that it can accept to the server?
+Ans:en-us,en
+
+3. What is the IP address of your computer? Of the gaia.cs.umass.edu server?
+Ans:128.119.245.12
+
+4. What is the status code returned from the server to your browser?
+Ans:
+
+5. When was the HTML file that you are retrieving last modified at the server?
+Ans:text/html
+
+6. How many bytes of content are being returned to your browser?
+Ans:128
+
+
+7. By inspecting the raw data in the packet content window, do you see any headers within
+the data that are not displayed in the packet-listing window?
+Ans:no, I don’t see any in the HTTP Message below
+
+8. Inspect the contents of the first HTTP GET request from your browser to the server.
+Do you see an “IF-MODIFIED-SINCE” line in the HTTP GET?
+Ans:There is no IF-MODIFIED-SINCE in the first GET
+
+9. Inspect the contents of the server response. Did the server explicitly return the
+contents of the file? How can you tell?
+Ans:text returned in response to first GET
+
+10. Now inspect the contents of the second HTTP GET request from your browser to the
+server. Do you see an “IF-MODIFIED-SINCE:” line in the HTTP GET? If so, what
+information follows the “IF-MODIFIED-SINCE:” header?
+Ans:2nd GET has IF-MODIFED-SINCE:Wed,27 oct 2010 11:54:02 GMT/r/n
+
+11. What is the HTTP status code and phrase returned from the server in response to this
+second HTTP GET? Did the server explicitly return the contents of the file?
+Explain.
+Ans:The file has not been modified!
+So the text of the file is NOT
+returned in the HTTP message
+
+12. How many HTTP GET request messages did your browser send? Answer: 1. Which
+packet number in the trace contains the GET message for the Bill or Rights? 
+Ans: 8
+
+13. Which packet number in the trace contains the status code and phrase associated with the
+response to the HTTP GET request? 
+Ans: packet 10.
+
+14. What is the status code and Phrase in the response? 
+Ans: 200 (OK)
+
+15. How many data-containing TCP segments were needed to carry the single HTTP
+response and the text of the Bill of Rights? 
+Ans: three packets (10, 11, 13 in the trace)
+
+How many HTTP GET request messages did your browser send?
+Ans: there were
+three HTTP GET messages sent: packet 10 in the trace (to get the base file), packet 17 (to
+get the Pearson logo) and packet 20 (to get the 5th edition textbook cover).
+
+17.Can you tell whether your browser downloaded the two images serially, or whether they
+were downloaded from the two web sites in parallel? Explain.
+Answer: The downloads occurred in parallel. Note that the two GET messages for the images are in packets 17
+and 20. The 200OK reply containing the images sow up as packets 25, and 54.
+
+What is the server’s response (status code and phrase) in response to the initial HTTP
+GET message from your browser? 
+Ans: Packet 6 in the trace contains the first GET and packet 9 contains the REPLY. The server’s in packet 9 is: 401 Authorization
+Required
+
+19. When your browser’s sends the HTTP GET message for the second time, what new field
+is included in the HTTP GET message? 
+Ans: The HTTP GET includes the Authorization: Basic: field
+
+
+
+
+
+
+
+
+
+
+
