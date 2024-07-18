@@ -1,0 +1,78 @@
+wireshark packet analysis for testfire.net:
+
+packet 1:
+  1.Physical Layer
+	section number: 1
+	Encapsulation type: Ethernet(1)
+  2.Datalink Layer
+	Protocol: Ethernet II
+	source MAC address: 00:50:56:92:be:28
+	Destination MAC address: 00:50:56:92:f4:28
+	Type: IPv4
+  3.Network Layer
+	Type: IPv4
+	Source IP address:18.155.37.205
+	Destination IP address: 172.20.0.54
+	Header Length: 20 bytes
+	Protocol: TCP(6)
+  4.Transport Layer
+	Source Port: 80
+	Destination Port: 49850
+	Sequence Number:2181
+	Acknowledgement number : 221
+	Header Length : 20 bytes
+	window: 131
+	Urgent poiner: 0
+   5.Session
+	Segment count: 3
+	Reassembled TCP length: 2805
+	3 Reassembled TCP Segments (2805 bytes): #337(740), #338(1440), #339(625)
+   6.Presentation Layer
+	Response Version: HTTP/1.1
+	Status Code: 200
+	Content-Type: application/ocsp-response\r\n
+	Content length: 2065
+	Connection: keep-alive\r\n
+	Server: Sucuri/Cloudproxy\r\n
+	Date: Wed, 17 Jul 2024 20:18:21 GMT\r\n
+   7.Application Layer:
+	responseStatus: successful (0)
+	ResponseType Id: 1.3.6.1.5.5.7.48.1.1 (id-pkix-ocsp-basic)
+packet 2:
+  1.Physical Layer
+	section number: 1
+	Encapsulation type: Ethernet(1)
+  2.Datalink Layer
+	Protocol: Ethernet II
+	source MAC address: 00:50:56:92:be:28
+	Destination MAC address: 00:50:56:92:f4:28
+	Type: IPv4
+  3.Network Layer
+	Type: IPv4
+	Source IP address:108.157.242.195
+	Destination IP address: 172.20.0.54
+	Header Length: 20 bytes
+	Protocol: TCP(6)
+  4.Transport Layer
+	Source Port: 80
+	Destination Port: 49850
+	Sequence Number:1441
+	Acknowledgement number : 254
+	Header Length : 20 bytes
+	window: 131
+	Urgent poiner: 0
+   5.Session
+	Segment count: 2
+	Reassembled TCP length: 2017
+	3 Reassembled TCP Segments (2017 bytes): #367(1440), #368(577)
+   6.Presentation Layer
+	Response Version: HTTP/1.1
+	Status Code: 200
+	Content-Type: application/ocsp-response\r\n
+	Content length: 1407
+	Connection: keep-alive\r\n
+	Server: Sucuri/Cloudproxy\r\n
+	Date: Wed, 17 Jul 2024 20:18:21 GMT\r\n
+   7.Application Layer:
+	responseStatus: successful (0)
+	ResponseType Id: 1.3.6.1.5.5.7.48.1.1 (id-pkix-ocsp-basic)
